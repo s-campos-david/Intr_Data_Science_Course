@@ -47,7 +47,13 @@ measure itself? If yes, it gives a way to build a watch list, including for hosp
 
 ## Results
 
-[STILL PENDING]
+I started this project trying to understand what a hospital with poor maternal outcomes looks like. What caught my attention was the map: among states with at least 25 scored hospitals, the share of Bottom Performers goes from about 8% in Kansas to 51% in New York. This makes state-level differences worth investigating, but it does not tell us why they happen. Patient populations, access to care and differences in reporting could all contribute.
+
+Cesarean rates also showed a pattern. From the lowest to the highest cesarean-rate quintile, the share of Bottom Performers rises from 21.5% to 32.5%. That is an association, not evidence that cesareans caused the complications. The safety attestation, SM_7, was less informative in this comparison: 25.1% of hospitals reporting "Yes" were Bottom Performers, against 24.7% among other responses. Those other responses are not necessarily a confirmed "No", and this result does not mean safety programs have no value.
+
+The model helped me see why accuracy is not enough. Predicting that no hospital is a Bottom Performer gets 74.9% accuracy, but finds none of them. Logistic regression gets 60.3% accuracy and finds about half, although only one in three flags is correct (ROC AUC 0.623). It gives some separation between groups, but I would not use it to judge a hospital or recommend care.
+
+My next step would be to look for better information, not just a more complicated algorithm. This file does not describe staffing, detailed patient characteristics or the communities hospitals serve. I also explored the full sample before the split, and tested the model on only one split of labelled hospitals. New data and a stricter validation would be needed before using it as a watch list, especially for hospitals without a CMS label.
 
 ## Acknowledgements
 
