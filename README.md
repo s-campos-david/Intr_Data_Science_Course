@@ -73,3 +73,7 @@ Blog post with the non-technical write-up:
 [def]
 
 [def]: https://s-campos-david.github.io/Intr_Data_Science_Course/
+
+## Use of AI
+
+I've used Cortex Code from Snowflake platform to help me with code validation, translation and English grammar, and to work with github. The analysis, the blog post content and the code were developed by me and validated by Cortex Code.
