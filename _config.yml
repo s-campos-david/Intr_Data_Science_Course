@@ -1,19 +1,11 @@
-title: Reading the Data
-description: >-
-  A small blog where I take public datasets apart and write down what I find.
-  Currently working through the Udacity Data Science track.
+title: ""
+description: ""
 
 theme: minima
 show_excerpts: true
 
 author: David Campos
 
-header_pages:
-  - about.md
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-exclude:
-  - README.md
